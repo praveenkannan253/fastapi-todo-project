@@ -1,0 +1,23 @@
+[project]
+name = "fastapi-demo-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "praveenkannan253", email = "praveenkannan253@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.162.0",
+    "psycopg2>=2.9.13",
+    "psycopg[binary]>=3.3.6",
+    "sqlalchemy>=2.1.6",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+fastapi-demo-project = "fastapi_demo_project:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
